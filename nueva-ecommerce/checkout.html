@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b5be2d798d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Bodoni&family=Parisienne&family=Playfair+Display:ital@1&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body class="body-tienda">
+
+    <header class="header">
+        <nav class="menu__navegador">
+            <label class="logo"> Pipa Sykes</label>
+            <button class="toggle">
+              <lord-icon src="https://cdn.lordicon.com/auvicynv.json" trigger="loop"
+              style="width:25px;height:25px">
+              </lord-icon>
+          </button>
+            <ul class="menu__items menu__navegador__visible" >
+                <li><a href="/home.html" class="ul__item">HOME</a></li> 
+                <li><a href="/sobre-mi.html" class="ul__item">SOBRE MI</a></li> 
+                <li><a href="/index.html" class="ul__item">TIENDA</a></li> 
+                <li><a href="/galeria.html" class="ul__item">GALERIA</a></li> 
+                <li><a href="contacto.html" class="ul__item">CONTACTO</a></li>
+            </ul>
+        </nav>
+          
+    </header>
+
+
+    <div class="contenedor__form">
+        <form class="form__contacto">
+          <h2 class="title__contacto">Check out</h2>
+          <input id="ingreso" class="input-cont" type="text" name="Nombre en la Tarjeta" placeholder="Nombre en la Tarjeta">
+          <input id="nTarjeta" class="input-cont" type="text" name="Numero de Tarjeta" placeholder="Numero de Tarjeta">
+          <input id="cvvTarjeta" class="input-cont" type="text" name="cvv" placeholder="CVV">
+          <input id="date" type="date" class="date">
+          <input id="email" class="input-cont" type="text" name="Correo" placeholder="Correo electronico">
+          <input type="checkbox" name="" id="checkbox">
+          <label class="checklabel" for="check">Recordar datos</label>
+          
+          <input type="button" value="PAGAR" id="button-contacto">
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer1">
+            <h2 class="footer__title">PEPITA S.</h2>
+        
+            <nav class="nav__footer">
+                <a class="ul__item__footer" href="/home.html">HOME</a> |
+                <a class="ul__item__footer" href="/sobre-mi.html">SOBRE MI</a> |
+                <a class="ul__item__footer" href="/index.html">TIENDA</a> |
+                <a class="ul__item__footer" href="/galeria.html">GALERIA</a> |
+                <a class="ul__item__footer" href="contacto.html">CONTACTO</a>
+            </nav>
+           
+      
+    
+            <div class="social__bar">
+                <a  href="https://www.facebook.com/KillJoey.Razorblade/" >  <img src="imagenes/facebookicon.png" width="45" height="45" class="icon__social"></a>
+                <a href="https://twitter.com/galaxcticMila" > <img src="imagenes/instagramicon.png"  width="45" height="45" class="icon__social"></a>
+                <a href="https://www.instagram.com/mmicaelaz"  target="_blank"> <img src="imagenes/twittweicon.png"  width="45" height="45" class="icon__social"></a>
+                <a href="https://www.youtube.com/c/maisyleigh" target="_blank"> <img src="imagenes/youtubeicon.png"  width="45" height="45" class="icon__social"></a>    
+                
+            </div>
+        </div>
+        <div>
+            <p class="par-derechos">© Micaela Zocola 2022 - All Registered.</p>
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/dist/sweetalert2.all.min.js" integrity="sha256-6DBhCk8kLxWN6B/oKVfvB0ieNTCY2r0rlFlkAjLmrsM=" crossorigin="anonymous"></script>
+    <script src="/storage.js"></script>
+    <script src="js/main.js"></script>    
+</body>
+</html>

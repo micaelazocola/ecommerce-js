@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Bodoni&family=Parisienne&family=Playfair+Display:ital@1&family=Prata&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <title>Document</title>
+</head>
+<body class="body-tienda">
+    <header class="header">
+        <nav class="menu__navegador">
+            <label class="logo"> Pipa Sykes</label>
+            <button class="toggle">
+              <lord-icon src="https://cdn.lordicon.com/auvicynv.json" trigger="loop"
+              style="width:25px;height:25px">
+              </lord-icon>
+          </button>
+            <ul class="menu__items menu__navegador__visible" >
+                <li><a href="/home.html" class="ul__item">HOME</a></li> 
+                <li><a href="/sobre-mi.html" class="ul__item">SOBRE MI</a></li> 
+                <li><a href="/index.html" class="ul__item">TIENDA</a></li> 
+                <li><a href="/galeria.html" class="ul__item">GALERIA</a></li> 
+                <li><a href="contacto.html" class="ul__item">CONTACTO</a></li>
+            </ul>
+        </nav>
+          
+    </header>
+    <div class="container">
+        <h1 class="hShop">Shop Now!</h1> 
+        
+        <div class="my-5">
+            <h4>Shopping bag:</h4>
+            <table class="table ">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer-carrito">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+        <div class="row" id="contenedor-productos">
+            
+        </div>
+    </div> 
+    
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm btn1" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm btn1">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm btn1">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    
+
+    <template id="template-productos">
+        <div id="cardcontainer" class="col-12 col-md-4 mb-5">
+            <div class="card">
+                <img src="" class="card-img-top" alt="..." width="250px" height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">
+                      Cafe
+                  </h5>
+                  <p class="card-text">$ <span>500</span></p>
+                  <button class="btn btn-dark btn-ghost">Agregar al carrito!</button>
+                </div>
+              </div>
+        </div>
+    </template>
+
+    <button class="btn-ghost-img check-out" id="boton-fin-compra"> Check out</button>
+
+    <footer>
+        <div class="footer1">
+            <h2 class="footer__title">PEPITA S.</h2>
+        
+            <nav class="nav__footer">
+                <a class="ul__item__footer" href="/index.html">HOME</a> |
+                <a class="ul__item__footer" href="/sobre-mi.html">SOBRE MI</a> |
+                <a class="ul__item__footer" href="/index.html">TIENDA</a> |
+                <a class="ul__item__footer" href="/galeria.html">GALERIA</a> |
+                <a class="ul__item__footer" href="contacto.html">CONTACTO</a>
+            </nav>
+           
+      
+   
+            <div class="social__bar">
+                <a  href="https://www.facebook.com/KillJoey.Razorblade/" >  <img src="imagenes/facebookicon.png" width="45" height="45" class="icon__social"></a>
+                <a href="https://twitter.com/galaxcticMila" > <img src="imagenes/instagramicon.png"  width="45" height="45" class="icon__social"></a>
+                <a href="https://www.instagram.com/mmicaelaz"  target="_blank"> <img src="imagenes/twittweicon.png"  width="45" height="45" class="icon__social"></a>
+                <a href="https://www.youtube.com/c/maisyleigh" target="_blank"> <img src="imagenes/youtubeicon.png"  width="45" height="45" class="icon__social"></a>    
+                
+            </div>
+        </div>
+        <div>
+            <p class="par-derechos">© Micaela Zocola 2022 - All Registered.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/dist/sweetalert2.all.min.js" integrity="sha256-6DBhCk8kLxWN6B/oKVfvB0ieNTCY2r0rlFlkAjLmrsM=" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
